@@ -22,6 +22,9 @@ public interface ElectionProjection {
 	    String getPrenomWinner();
 	     String getPartieWinner();
 	     String getPartieWinnerAr();
+	     String getAddressBureau();
+	     String getLieuBureau();
+	     int getNbrPlaces();
 	    int getIdOfWinner();
 	int getNmbInscrits();
 	   int getNmbMosa();

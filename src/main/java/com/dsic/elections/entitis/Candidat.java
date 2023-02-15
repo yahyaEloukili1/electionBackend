@@ -19,6 +19,23 @@ public class Candidat {
     private int priorite;
     private int age;
     public Candidat(String firstName, String lastName, LocalDate dateOfBirth, int nombreVote, int priorite, int age,
+			Election election, Cercle cercle, Commune commune) {
+		super();
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.dateOfBirth = dateOfBirth;
+		this.nombreVote = nombreVote;
+		this.priorite = priorite;
+		this.age = age;
+		this.election = election;
+		this.cercle = cercle;
+		this.commune = commune;
+		
+	}
+
+
+
+	public Candidat(String firstName, String lastName, LocalDate dateOfBirth, int nombreVote, int priorite, int age,
 			Election election, Cercle cercle, Commune commune, Partie partie) {
 		super();
 		this.firstName = firstName;
@@ -93,6 +110,32 @@ public class Candidat {
 		this.cercle = cercle;
 		this.commune = commune;
 		this.partie = partie;
+	}
+	public Candidat(String firstName, String lastName, LocalDate dateOfBirth, int nombreVote, int priorite,
+			Election election, Cercle cercle, Commune commune) {
+		super();
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.dateOfBirth = dateOfBirth;
+		this.nombreVote = nombreVote;
+		this.priorite = priorite;
+		this.election = election;
+		this.cercle = cercle;
+		this.commune = commune;
+	
+	}
+	public Candidat(String firstName, String lastName, LocalDate dateOfBirth,int nombreVote,
+			Election election, Cercle cercle, Commune commune) {
+		super();
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.dateOfBirth = dateOfBirth;
+	
+		this.election = election;
+		this.cercle = cercle;
+		this.commune = commune;
+		this.nombreVote = nombreVote;
+	
 	}
 
 

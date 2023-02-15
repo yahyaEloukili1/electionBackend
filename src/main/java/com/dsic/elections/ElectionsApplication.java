@@ -83,17 +83,30 @@ public class ElectionsApplication implements CommandLineRunner {
 		communeRepository.save(c3);
 		communeRepository.save(c4);
 		communeRepository.save(c5);
-		Partie p = new Partie("MA","احزب لاستقلال");
-		Partie p2 = new Partie("PDI","حزب الحركة الشعبية");
+		Partie p1 = new Partie("PI","حزب الشورى والاستقلال");
+		Partie p2 = new Partie("MP","حزب الحركة الشعبية");
+		Partie p3 = new Partie("RNI","حزب التجمع الوطني للأحرار");
+		Partie p4 = new Partie("MDS","حزب الحركة الديمقراطية الاجتماعية");
+		Partie p5 = new Partie("PFC","حزب القوات المواطنة");
+		Partie p6 = new Partie("UC","حزب الاتحاد الدستوري");
+		Partie p7 = new Partie("FFD","حزب جبهة القوى الديمقراطية");
+		Partie p8 = new Partie("PDI","حزب الشورى والاستقلال");
+
 		
-		partieRepository.save(p);
+		partieRepository.save(p1);
 		partieRepository.save(p2);
+		partieRepository.save(p3);
+		partieRepository.save(p4);
+		partieRepository.save(p5);
+		partieRepository.save(p6);
+		partieRepository.save(p7);
+		partieRepository.save(p8);
 		for(int i=1;i<24;i++) {
 		Cercle cercle =	cercleRepository.save(new Cercle(i,c1));
 		Election e = new Election(0, null, 0, 0, 0, 0, 0, null, null, null, 0, c1, cercle, null);
 		electionRepository.save(e);
-		Candidat candidat1 = new Candidat(null,null,null,1,e,cercle,c1,p);
-		Candidat candidat2 = new Candidat(null,null,null,2,e,cercle,c1,p2);
+		Candidat candidat1 = new Candidat(null,null,null,1,e,cercle,c1,null);
+		Candidat candidat2 = new Candidat(null,null,null,2,e,cercle,c1,null);
 		Candidat candidat3 = new Candidat(null,null,null,3,e,cercle,c1,null);
 		candidatRepository.save(candidat1);
 		candidatRepository.save(candidat2);
@@ -140,8 +153,8 @@ public class ElectionsApplication implements CommandLineRunner {
 			Cercle cercle =	cercleRepository.save(new Cercle(i,c5));
 			Election e = new Election(0, null, 0, 0, 0, 0, 0, null, null, null, 0, c5, cercle, null);
 			electionRepository.save(e);
-			Candidat candidat1 = new Candidat(null,null,null,1,e,cercle,c5,p);
-			Candidat candidat2 = new Candidat(null,null,null,2,e,cercle,c5,p2);
+			Candidat candidat1 = new Candidat(null,null,null,1,e,cercle,c5,null);
+			Candidat candidat2 = new Candidat(null,null,null,2,e,cercle,c5,null);
 			Candidat candidat3 = new Candidat(null,null,null,3,e,cercle,c5,null);
 			candidatRepository.save(candidat1);
 			candidatRepository.save(candidat2);

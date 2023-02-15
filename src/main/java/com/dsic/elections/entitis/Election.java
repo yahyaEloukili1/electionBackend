@@ -28,7 +28,34 @@ public class Election {
 	private int nombreDesCheses;
 	private String nomWinner;
 	private int numeroWinner;
-	
+	private String addressBureau;
+	private String lieuBureau;
+	public String getAddressBureau() {
+		return addressBureau;
+	}
+
+	public void setAddressBureau(String addressBureau) {
+		this.addressBureau = addressBureau;
+	}
+
+
+	public String getLieuBureau() {
+		return lieuBureau;
+	}
+
+	public void setLieuBureau(String lieuBureau) {
+		this.lieuBureau = lieuBureau;
+	}
+
+
+	private int nbrPlaces;
+	public int getNbrPlaces() {
+		return nbrPlaces;
+	}
+
+	public void setNbrPlaces(int nbrPlaces) {
+		this.nbrPlaces = nbrPlaces;
+	}
 	private String partieWinner;
 	private String partieWinnerAr;
 	public String getPartieWinnerAr() {
